@@ -1,15 +1,11 @@
 <div class='table-responsive'>
   <table class='table'>
-    <tr *ngFor='let product of products'>
-      <td>
+    <tr *ngFor="let product of products">
+      <div *ngIf="product.type == 'dish'">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.price | currency:'SEK' }}</p>
         <img class="products" [src]='product.image'/>
-      </td>
-      <td>{{ product.name }}</td>
-      <td>{{ product.price | currency:'SEK' }}</td>
-      <td>{{product.name}}</td>
-      <!--<li *ngFor="let ingredient of products.ingredients">-->
-        <!--<td> {{ingredient.price}}</td>-->
-    </li>
+      </div>
     </tr>
   </table>
 </div>
