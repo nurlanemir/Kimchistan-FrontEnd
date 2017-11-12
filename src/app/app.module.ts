@@ -9,11 +9,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    CartComponent,
 
   ],
   imports: [
