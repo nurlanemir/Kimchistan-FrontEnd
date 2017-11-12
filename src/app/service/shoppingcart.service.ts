@@ -5,11 +5,11 @@ import {Injectable} from '@angular/core';
 export class ShoppingCartService {
   cart: any = [];
 
-  // getCart(){
-  //   return Promise.resolve(this.cart);
-  // };
+  getCart() {
+    return Promise.resolve(this.cart);
+  };
 
-  addToCart(p_id: string, p_name: string, price: number, i_id: string, i_name: string) {
+  addToCart(p_id: string, p_name: string, price: number, i_id?: string, i_name?: string) {
 
     this.cart.push({
       'product id': p_id,
@@ -22,11 +22,11 @@ export class ShoppingCartService {
     console.log(this.cart);
   };
 
-// removeCart(searchId: string) {
-//   let tmp = this.cart.map(x => x.id).indexOf(searchId);
-//
-//   if (tmp > 1) {
-//     this.cart.splice)tmp,1);
-//   };
-// };
+  removeCart(searchId: string) {
+    let tmp = this.cart.map(x => x.id).indexOf(searchId);
+
+    if (tmp > 1) {
+      this.cart.splice(tmp, 1);
+    }
+  }
 }
