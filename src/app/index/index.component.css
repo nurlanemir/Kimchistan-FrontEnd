@@ -3,6 +3,13 @@ div.col-md-4.centered {
   margin-bottom: 30px;
 }
 
+i.fa.fa-cart-plus.fa-5x {
+  color: rgba(253, 253, 253, 0.95);
+  position: sticky;
+  top: 10px;
+  left: 250%;
+}
+
 img.product_image {
   width: 40%;
   border-radius: 50%;
