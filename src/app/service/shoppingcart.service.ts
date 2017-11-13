@@ -7,7 +7,7 @@ export class ShoppingCartService {
 
   getCart() {
     return Promise.resolve(this.cart);
-  };
+  }
 
   addToCart(p_id: string, p_name: string, price: number, i_id?: string, i_name?: string) {
 
@@ -18,9 +18,8 @@ export class ShoppingCartService {
       'ingredient id': i_id,
       'ingredient name': i_name
     });
-    alert(`${p_name} added to cart`);
     console.log(this.cart);
-  };
+  }
 
   removeCart(searchId: string) {
     let tmp = this.cart.map(x => x.id).indexOf(searchId);

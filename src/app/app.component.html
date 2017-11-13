@@ -1,4 +1,8 @@
 <div class="body">
+  <div class="col-md-3">
+  <a routerLink="/cart" routerLinkActive="active">Cart</a>
+  <router-outlet></router-outlet>
+  </div>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -24,7 +28,9 @@
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <div *ngFor="let product of products">
               <div *ngIf="product.type == 'salad'">
-                <button type="button" class="btn-success bt-sm" (click)="addProduct(product.id, product.name, product.price)">{{product.name}}</button>
+                <button type="button" class="btn-success bt-sm"
+                        (click)="addProduct(product.id, product.name, product.price)">{{product.name}}
+                </button>
               </div>
             </div>
           </div>
@@ -38,7 +44,9 @@
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <div *ngFor="let product of products">
               <div *ngIf="product.type == 'drink'">
-                <button type="button" class="btn btn-info bt-sm" (click)="addProduct(product.id, product.name, product.price)">{{product.name}}</button>
+                <button type="button" class="btn btn-info bt-sm"
+                        (click)="addProduct(product.id, product.name, product.price)">{{product.name}}
+                </button>
               </div>
             </div>
           </div>
@@ -60,7 +68,10 @@
             <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Choose Protein</button>
             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
               <div *ngFor="let ingredient of product.ingredients">
-                <button type="button" class="btn btn-link" (click)="addProduct(product.id, product.name, product.price, ingredient.id, ingredient.name, ingredient.price)">{{ingredient.name}}</button>
+                <button type="button" class="btn btn-link"
+                        (click)="addProduct(product.id, product.name, product.price, ingredient.id, ingredient.name, ingredient.price)">
+                  {{ingredient.name}}
+                </button>
               </div>
             </div>
           </div>
