@@ -10,8 +10,10 @@ import { RouterModule, Routes } from '@angular/router';
 import {AppComponent} from './app.component';
 import {AgmCoreModule} from '@agm/core';
 import {CartComponent} from './cart/cart.component';
+import { IndexComponent } from './index/index.component';
 
 const appRoutes: Routes = [
+  { path: '', component: IndexComponent },
   { path: 'cart', component: CartComponent },
 ];
 
@@ -20,6 +22,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     CartComponent,
+    IndexComponent,
 
   ],
   imports: [
