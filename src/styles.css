@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+.footer {
+  background-color: black;
+  background: rgba(0,0,0,.7);
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+
+  width: 100%;
+  color: white;
+}
+
+.header-text {
+  background-color: black;
+  background: rgba(0,0,0,.7);
+  width: 100%;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+nav.navbar.navbar-default {
+  margin-bottom: 30px;
+  padding: 0px;
+}
+
+nav {
+  background-image: url('/assets/flatlays.jpg');
+}
+
+.logo{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  top: 15px;
+}
+
+body {
+  background-image: url('/assets/background.jpg');
+  image-resolution: from-image;
+}
+
+a:link {
+  color: red;
+}
+
+a {
+  color: red;
+}
+
+a:link:hover, a:link:visited, a:link:active, a:link:focus {
+  color: darkred;
+  text-decoration: none;
+  border: none;
+}
+
+a#showing_hide:hover, a#showing_hide:visited, a#showing_hide:active, a#showing_hide:focus {
+  color: darkred;
+  text-decoration: none;
+  border: none;
+}
+
+i {
+  color: red;
+}
+
+i:hover {
+  color: darkred;
+  text-decoration: none;
+}
